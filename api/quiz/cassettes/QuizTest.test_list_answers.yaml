@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: http://127.0.0.1:8000/answers
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 29 Jun 2020 21:00:56 GMT
+      Location:
+      - /answers/
+      Server:
+      - WSGIServer/0.2 CPython/3.8.3
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: http://127.0.0.1:8000/answers/
+  response:
+    body:
+      string: '[{"id":1,"answer":"test"},{"id":2,"answer":"test1"},{"id":3,"answer":"answer1"},{"id":4,"answer":"answer2"},{"id":5,"answer":"answer3"},{"id":6,"answer":"answer4"}]'
+    headers:
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      Content-Length:
+      - '164'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 29 Jun 2020 21:00:56 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.8.3
+      Vary:
+      - Accept, Cookie
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1
